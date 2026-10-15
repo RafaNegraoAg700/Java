@@ -31,7 +31,7 @@ public class Corrida {
 
         System.out.println(
                 "\nCondição da pista: " +
-                        (chuva ? "🌧️ CHUVA" : "☀️ SECA")
+                        (chuva ? " CHUVA" : " SECA")
         );
 
         System.out.println("\n=== CLASSIFICAÇÃO ===");
@@ -47,9 +47,7 @@ public class Corrida {
             );
         }
 
-        // =========================
-        // POLE POSITION
-        // =========================
+       
 
         resultados.sort(
                 Comparator.comparingDouble(
@@ -62,13 +60,11 @@ public class Corrida {
         pole.adicionarPole();
 
         System.out.println(
-                "\n⏱️ POLE POSITION: " +
+                "\n POLE POSITION: " +
                         pole.getNome()
         );
 
-        // =========================
-        // CORRIDA
-        // =========================
+       
 
         for (Resultado resultado : resultados) {
 
@@ -107,9 +103,6 @@ public class Corrida {
                 }
             }
 
-            // =========================
-            // PIT STOP
-            // =========================
 
             boolean fezPitStop =
                     random.nextInt(100) < 75;
@@ -118,9 +111,7 @@ public class Corrida {
                 tempo += 2 + random.nextDouble() * 3;
             }
 
-            // =========================
-            // DNF
-            // =========================
+            
 
             boolean abandonou =
                     random.nextInt(100) < 8;
@@ -137,9 +128,7 @@ public class Corrida {
                 )
         );
 
-        // =========================
-        // PONTUAÇÃO
-        // =========================
+        
 
         int[] pontos = {
                 25, 18, 15, 12, 10,
@@ -196,13 +185,11 @@ public class Corrida {
         }
 
         System.out.println(
-                "\n🏁 Corrida finalizada!"
+                "\n Corrida finalizada!"
         );
     }
 
-    // ======================================
-    // CLASSE INTERNA
-    // ======================================
+    
 
     private static class Resultado {
 
