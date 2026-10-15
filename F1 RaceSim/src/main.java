@@ -8,9 +8,7 @@ public class main {
 
         Scanner scanner = new Scanner(System.in);
 
-        // =====================================
-        // EQUIPES
-        // =====================================
+       
 
         ArrayList<Equipe> equipes = new ArrayList<>();
 
@@ -26,9 +24,7 @@ public class main {
         equipes.add(redBull);
         equipes.add(astonMartin);
 
-        // =====================================
-        // PILOTOS
-        // =====================================
+        
 
         ArrayList<Piloto> pilotos = new ArrayList<>();
 
@@ -73,9 +69,7 @@ public class main {
         pilotos.add(alonso);
         pilotos.add(stroll);
 
-        // =====================================
-        // ADICIONAR PILOTOS ÀS EQUIPES
-        // =====================================
+        
 
         mercedes.adicionarPiloto(russell);
         mercedes.adicionarPiloto(antonelli);
@@ -92,9 +86,7 @@ public class main {
         astonMartin.adicionarPiloto(alonso);
         astonMartin.adicionarPiloto(stroll);
 
-        // =====================================
-        // CALENDÁRIO - 10 CORRIDAS
-        // =====================================
+      
 
         String[] corridas = {
                 "GP da Austrália",
@@ -129,7 +121,7 @@ public class main {
         do {
 
             System.out.println("\n====================================");
-            System.out.println("        🏎️ F1 RACE SIMULATOR");
+            System.out.println("         F1 RACE SIMULATOR");
             System.out.println("====================================");
 
             System.out.println(
@@ -232,9 +224,7 @@ public class main {
         scanner.close();
     }
 
-    // =====================================
-    // PILOTOS
-    // =====================================
+    
 
     public static void mostrarPilotos(
             ArrayList<Piloto> pilotos
@@ -256,9 +246,7 @@ public class main {
         }
     }
 
-    // =====================================
-    // CLASSIFICAÇÃO
-    // =====================================
+   
 
     public static void mostrarClassificacao(
             ArrayList<Piloto> pilotos
@@ -294,10 +282,7 @@ public class main {
         }
     }
 
-    // =====================================
-    // CONSTRUTORES
-    // =====================================
-
+   
     public static void mostrarConstrutores(
             ArrayList<Equipe> equipes
     ) {
@@ -328,9 +313,7 @@ public class main {
         }
     }
 
-    // =====================================
-    // CALENDÁRIO
-    // =====================================
+  
 
     public static void mostrarCalendario(
             String[] corridas,
@@ -367,9 +350,6 @@ public class main {
         }
     }
 
-    // =====================================
-    // CAMPEÃO
-    // =====================================
 
     public static void mostrarCampeao(
             ArrayList<Piloto> pilotos,
@@ -421,7 +401,7 @@ public class main {
         );
 
         System.out.println(
-                "        🏆 CAMPEÕES DA TEMPORADA"
+                "         CAMPEÕES DA TEMPORADA"
         );
 
         System.out.println(
@@ -429,7 +409,7 @@ public class main {
         );
 
         System.out.println(
-                "\n🏆 CAMPEÃO DE PILOTOS"
+                "\n CAMPEÃO DE PILOTOS"
         );
 
         System.out.println(
@@ -452,7 +432,7 @@ public class main {
         );
 
         System.out.println(
-                "\n🏆 CAMPEÃO DE CONSTRUTORES"
+                "\n CAMPEÃO DE CONSTRUTORES"
         );
 
         System.out.println(
